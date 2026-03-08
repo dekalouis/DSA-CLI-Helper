@@ -1,0 +1,47 @@
+
+// quesiton list
+
+{
+  "id": "0",
+  "title": "Contains Duplicates", 
+  "category": "Arrays & Hashing", 
+  "difficulty": "easy", 
+  "steps": [
+    "Create an empty set/hashmap to store seen numbers",
+    "Loop the entire list of numbers", 
+    "If the number exists in the hashmap, return True", 
+    "Otherwise, add it to the hashmap"
+  ], 
+  "time_complexity": "O(n)", 
+  "space_complexity": "O(n)"
+},
+{
+  "id": "1",
+  "title": "Valid Anagram", 
+  "category": "Arrays & Hashing", 
+  "difficulty": "easy", 
+  "steps": [
+    "Create empty count hashes for both strings",
+    "Check if the length are not the same, do an early return", 
+    "Loop through the index of one string", 
+    "Check if that character in i position of both strings and add the count to the hash", 
+    "Finally return if the hash of both strings are equal"
+  ], 
+  "time_complexity": "O(n+m)", 
+  "space_complexity": "O(1) at most 26 chars"
+},
+{
+  "id": "2", 
+  "title": "Two Sum", 
+  "category": "Arrays & Hashing", 
+  "difficulty": "easy", 
+  "steps": [
+    "Create an empty hash for the numbers storing their value: index", 
+    "Loop through the input array", 
+    "Create a potential variable which subtracts the num at current position by the target", 
+    "If the potential is in the hash, return the array with the current index and the value (which stores the index) of the hash",
+    "Otherwise, add the current number to the hash as the key, and the index as the value"
+  ], 
+  "time_complexity": "O(n)", 
+  "space_complexity": "O(n)"
+}

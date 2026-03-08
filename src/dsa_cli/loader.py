@@ -1,12 +1,3 @@
-# class Question:
-#     def __init__(self, id, title, category, difficulty, steps, time_complexity, space_complexity):
-#         self.id = id
-#         self.title = title
-#         self.category = category
-#         self.difficulty = difficulty
-#         self.steps = steps
-#         self.time_complexity = time_complexity
-#         self.space_complexity = space_complexity
 from dataclasses import dataclass
 from pathlib import Path
 import json
@@ -30,7 +21,6 @@ def load_question(filepath: str) -> list[Question]:
         
         res = []
         for entry in data:
-            # print(entry)
             new_entry = Question(**entry)
             # new_entry = Question(
             #     entry['id'], 
